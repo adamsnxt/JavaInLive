@@ -7,6 +7,7 @@ public class ArrayAndList {
         CreadoYRecorriendoUnArray.showArray();
         CreadoYRecorriendoUnaLista.showLinkedList();
         CreadoYRecorriendoUnaLista.showArrayList();
+
     }
 }
 
@@ -20,12 +21,15 @@ class CreadoYRecorriendoUnArray {
         }
 
         for (int i = 0; i < nombres.length; i++) {
-            if (nombres.length == 0) {
-                System.out.println("No hay NA");
-            } else {
-                System.out.println(nombres[i]);
-            }
+            System.out.println(nombres[i]);
         }
+
+        // Hice dos for para que sea mas sexy y entendible
+
+        // for (int i = 0; i < nombres.length; i++) {
+        // nombres[i] = nombresListados[i];
+        // System.out.println(nombres[i]);
+        // }
     }
 
 }
@@ -38,7 +42,7 @@ class CreadoYRecorriendoUnaLista {
         nombres.add("tomas");
         nombres.add("nestor");
 
-        String aVer = nombres.get(3);
+        String aVer = nombres.get(2);
         // La lista se recorre por nodos partiendo del primero
         // hasta llegar al indice solicitado
         // SIEMPRE PASA POR TODOS LOS INDICES -> *NODOS*
@@ -59,7 +63,7 @@ class CreadoYRecorriendoUnaLista {
         nombres.add("belkis");
         nombres.add("joni");
 
-        String aVer = nombres.get(3);
+        String aVer = nombres.get(2);
         // .get(i) en ArrayList Snipea/oneShotea el indice jajajjaja
         // Osea va directo al i sin tener que pasar por sus nodos
         // algo mas parecido a lo que hacemos con ARRAY nombres[i]
